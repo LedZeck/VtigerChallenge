@@ -23,6 +23,7 @@ angular.module('vtigerChallengeApp')
 
       $http({
         url:domain+'/webservice.php',
+        crossDomain: true,
         method:'POST',
         data: $httpParamSerializerJQLike({
           "operation": "login",
